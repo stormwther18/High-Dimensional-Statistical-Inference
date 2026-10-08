@@ -1,0 +1,37 @@
+{
+  "covariance_generation": "passed at p=50,150,600",
+  "n23_p9": {
+    "loo_max_error": 2.4424906541753444e-15,
+    "gcv_objective_difference": 0.0,
+    "simplex_pass": true
+  },
+  "n17_p27": {
+    "loo_max_error": 5.356604049211455e-12,
+    "gcv_objective_difference": 4.440892098500626e-16,
+    "simplex_pass": true
+  },
+  "n43_p57": {
+    "loo_max_error": 1.9473311851925246e-12,
+    "gcv_objective_difference": 2.220446049250313e-16,
+    "simplex_pass": true
+  },
+  "full_run": {
+    "rows": 114480,
+    "max_qp_gap": 3.227373213121609e-05,
+    "solver_non_success": 0,
+    "oracle_dominance_pass": true,
+    "independent_test_to_analytic_risk": {
+      "5CV-MA": 1.0002835066479017,
+      "5CV-MA-Reg": 1.0003339812208092,
+      "Cp-known": 1.0009546403079153,
+      "Equal": 1.0003660784818587,
+      "GCV-MA": 0.9993832030309168,
+      "LOO-MA": 1.0002978500523731,
+      "Oracle-MA": 1.0004618471947295,
+      "Oracle-Ridge": 1.000453288938462,
+      "Ridge-5CV": 1.0001846941318322,
+      "Ridge-GCV": 1.0002973228022949,
+      "Ridge-LOO": 1.0005849112482537
+    }
+  }
+}

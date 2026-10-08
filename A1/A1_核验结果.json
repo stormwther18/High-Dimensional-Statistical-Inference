@@ -1,0 +1,33 @@
+{
+  "closed_form_optima": "passed",
+  "noise_and_regularization_limits": "passed",
+  "primal_dual_fit_max_abs_difference": 1.2490009027033011e-14,
+  "spectral_trace_risk_max_abs_difference": 1.3145040611561853e-13,
+  "finite_sample_optimum_and_nullspace": "passed",
+  "fixed_X_Monte_Carlo": [
+    {
+      "lambda_": 0.1,
+      "exact_conditional_risk": 2.214818725306658,
+      "mean_fitted_population_risk": 2.2072513675095413,
+      "se": 0.005048400013115198,
+      "z": -1.4989616071344436,
+      "draws": 4000
+    },
+    {
+      "lambda_": 1.0,
+      "exact_conditional_risk": 1.7367229601136205,
+      "mean_fitted_population_risk": 1.7372300200281283,
+      "se": 0.002769192682059025,
+      "z": 0.1831074875334467,
+      "draws": 4000
+    },
+    {
+      "lambda_": 4.0,
+      "exact_conditional_risk": 1.7675822185043613,
+      "mean_fitted_population_risk": 1.7676330426110813,
+      "se": 0.0028477596010705914,
+      "z": 0.017847049554665775,
+      "draws": 4000
+    }
+  ]
+}

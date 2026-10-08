@@ -1,0 +1,86 @@
+[
+  {
+    "key": "hoerl",
+    "doi": "10.1080/00401706.1970.10488634",
+    "provider": "Crossref BibTeX export",
+    "success": false,
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "key": "golub",
+    "doi": "10.1080/00401706.1979.10489751",
+    "provider": "Crossref BibTeX export",
+    "success": false,
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "key": "breiman",
+    "doi": "10.1007/BF00117832",
+    "provider": "Crossref BibTeX export",
+    "success": true,
+    "error": null
+  },
+  {
+    "key": "hansen",
+    "doi": "10.1111/j.1468-0262.2007.00785.x",
+    "provider": "Crossref BibTeX export",
+    "success": false,
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "key": "jma",
+    "doi": "10.1016/j.jeconom.2011.06.019",
+    "provider": "Crossref BibTeX export",
+    "success": true,
+    "error": null
+  },
+  {
+    "key": "wan",
+    "doi": "10.1016/j.jeconom.2009.10.030",
+    "provider": "Crossref BibTeX export",
+    "success": false,
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "key": "yu",
+    "doi": "10.12341/jssms13408",
+    "provider": "Crossref BibTeX export",
+    "success": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "key": "zhao",
+    "doi": "10.1007/s00362-018-1002-4",
+    "provider": "Crossref BibTeX export",
+    "success": false,
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "key": "dw",
+    "doi": "10.1214/17-AOS1549",
+    "provider": "Crossref BibTeX export",
+    "success": false,
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "key": "hastie",
+    "doi": "10.1214/21-AOS2133",
+    "provider": "Crossref BibTeX export",
+    "success": true,
+    "error": null
+  },
+  {
+    "key": "liu",
+    "doi": "10.1111/ectj.12009",
+    "provider": "Crossref BibTeX export",
+    "success": false,
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "key": "buckland",
+    "doi": "10.2307/2533961",
+    "provider": "Crossref BibTeX export",
+    "success": true,
+    "error": null
+  }
+]

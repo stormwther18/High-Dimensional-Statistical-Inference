@@ -1,0 +1,25 @@
+{
+  "seed": 20261007,
+  "replications": 9540,
+  "scenarios": 77,
+  "methods": [
+    "Ridge-GCV",
+    "Ridge-LOO",
+    "Ridge-5CV",
+    "Equal",
+    "GCV-MA",
+    "LOO-MA",
+    "5CV-MA",
+    "5CV-MA-Reg",
+    "MinNorm",
+    "Cp-known",
+    "Oracle-Ridge",
+    "Oracle-MA"
+  ],
+  "elapsed_sec": 47.907242500048596,
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "code_sha256": "48fbed9462c91536ce38003871acc400917fc9331a3921c13e750ea5a1531ac6"
+}

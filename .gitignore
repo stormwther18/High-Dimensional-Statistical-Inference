@@ -1,0 +1,14 @@
+# Local files and generated caches
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.mpl-cache/
+.latex-build/
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv

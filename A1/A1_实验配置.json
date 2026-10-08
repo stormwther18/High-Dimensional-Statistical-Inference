@@ -1,0 +1,43 @@
+{
+  "n": 120,
+  "repetitions": 100,
+  "test_size": 2000,
+  "alpha2": 1.0,
+  "seed": 20261004,
+  "experiments": "all",
+  "tree_depth": 4,
+  "exp_n": 20,
+  "exp_rate": 1.0,
+  "paper_repetitions": 500,
+  "paper_test_size": 100,
+  "paper_lambda_points": 50,
+  "check_only": false,
+  "noise_variance": 1.0,
+  "covariance": "identity",
+  "python_numpy_version": "2.4.6",
+  "gamma_grid": [
+    0.25,
+    0.5,
+    0.75,
+    0.9,
+    0.95,
+    1.0,
+    1.05,
+    1.1,
+    1.25,
+    1.5,
+    1.75,
+    2.0,
+    2.25,
+    2.5
+  ],
+  "fixed_lambdas": [
+    0.1,
+    1.0,
+    4.0
+  ],
+  "ridge_penalty": "n*lambda",
+  "convergence_repetitions": 100,
+  "latex_results_updated": true,
+  "elapsed_seconds": 6.24
+}

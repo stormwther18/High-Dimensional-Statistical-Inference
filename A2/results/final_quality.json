@@ -1,0 +1,25 @@
+{
+  "pdf_pages": 12,
+  "figures_included": [
+    "fig01_main_risk",
+    "fig02_interpolation",
+    "fig03_matched",
+    "fig04_robustness",
+    "fig05_sample_size",
+    "fig06_grid",
+    "fig07_weights",
+    "fig08_penalty",
+    "fig10_boundary_calibration",
+    "fig09_runtime"
+  ],
+  "references": 15,
+  "undefined_references": 0,
+  "undefined_citations": 0,
+  "overfull_boxes": 0,
+  "source_values_from_raw": true,
+  "numerical_verification": "results/verification.json",
+  "visual_review": "All 12 pages rendered; all-page contact sheet and full-size table/calibration pages inspected",
+  "native_editor_preview": "External figure assets unsupported by single-file compiler; source preserved",
+  "exported_pdf_compiler": "XeLaTeX TeX Live 2026",
+  "pdf_sha256": "17106dbfe278dc404c82aa85dde5d54c0511870d7adabd24a535d849d3c6d1d8"
+}

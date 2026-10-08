@@ -1,0 +1,48 @@
+{
+  "n": 120,
+  "repetitions": 100,
+  "test_size": 2000,
+  "alpha2": 1.0,
+  "seed": 20261004,
+  "experiments": "all",
+  "tree_depth": 4,
+  "exp_n": 20,
+  "exp_rate": 1.0,
+  "paper_repetitions": 500,
+  "paper_test_size": 100,
+  "paper_lambda_points": 50,
+  "check_only": false,
+  "noise_variance": 1.0,
+  "covariance_models": [
+    "BinaryTree",
+    "Exponential"
+  ],
+  "ridge_penalty": "n*lambda",
+  "theoretical_spectrum": "finite population H_p",
+  "author_code": "https://github.com/dobriban/high-dim-risk-experiments",
+  "author_commit": "d551acd2b3ce283e8ddf3885de4d9fc60dddd766",
+  "numpy_version": "2.4.6",
+  "gamma_grid": [
+    0.25,
+    0.5,
+    0.75,
+    0.9,
+    0.95,
+    1.0,
+    1.05,
+    1.1,
+    1.25,
+    1.5,
+    1.75,
+    2.0,
+    2.25,
+    2.5
+  ],
+  "fixed_lambdas": [
+    0.1,
+    1.0,
+    4.0
+  ],
+  "latex_results_updated": true,
+  "elapsed_seconds": 1.1
+}

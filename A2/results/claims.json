@@ -1,0 +1,59 @@
+{
+  "main_matched_comparisons": {
+    "GCV-MA": {
+      "mean_scenario_ratio": 2.6738955207116812,
+      "ratio_min": 0.9979439872510438,
+      "ratio_max": 7.956189475358575,
+      "better_scenarios": 1,
+      "ci_below_one": 0,
+      "ci_above_one": 34
+    },
+    "LOO-MA": {
+      "mean_scenario_ratio": 1.0305779749792914,
+      "ratio_min": 0.8821387099790094,
+      "ratio_max": 1.2628672464804094,
+      "better_scenarios": 14,
+      "ci_below_one": 4,
+      "ci_above_one": 11
+    },
+    "5CV-MA": {
+      "mean_scenario_ratio": 1.0250427217322522,
+      "ratio_min": 0.9949879536478244,
+      "ratio_max": 1.09112343902676,
+      "better_scenarios": 6,
+      "ci_below_one": 2,
+      "ci_above_one": 18
+    },
+    "5CV-MA-Reg": {
+      "mean_scenario_ratio": 1.0222298894606836,
+      "ratio_min": 0.9948014070602592,
+      "ratio_max": 1.0731530263828128,
+      "better_scenarios": 5,
+      "ci_below_one": 2,
+      "ci_above_one": 18
+    },
+    "Oracle-MA": {
+      "mean_scenario_ratio": 0.9830977964992483,
+      "ratio_min": 0.9685721771765237,
+      "ratio_max": 0.9987969155537746,
+      "better_scenarios": 36,
+      "ci_below_one": 36,
+      "ci_above_one": 0
+    }
+  },
+  "total_replications": 9540,
+  "distinct_data_replications": 6780,
+  "settings": 77,
+  "stress_labels": {
+    "36": "Aniso dense",
+    "37": "Aniso strong",
+    "38": "Aniso weak",
+    "39": "Aniso sparse",
+    "40": "Hetero",
+    "41": "t3",
+    "42": "Toeplitz sparse",
+    "43": "Nonlinear"
+  },
+  "max_qp_gap": 3.227373213121609e-05,
+  "solver_non_success": 0
+}
