@@ -2,7 +2,7 @@
 
 Course project for **High-Dimensional Statistical Inference**.
 
-Author: Xinyi Hong, Ruiyu Li.
+Authors: Xinyi Hong, Ruiyu Li.
 
 ## Repository structure
 
