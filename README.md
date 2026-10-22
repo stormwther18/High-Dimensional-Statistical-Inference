@@ -4,15 +4,11 @@ Course project for **High-Dimensional Statistical Inference**.
 
 Authors: Xinyi Hong, Ruiyu Li. 
 
-## Repository structure
-
-- `A1/` contains the A1 submission materials.
-- `A2/code/` contains the A2 experiment, verification, analysis, and report-building scripts.
-- `A2/results/` contains the A2 experiment configurations and recorded results.
-- `A2/figures/` contains the A2 figures in PDF and PNG formats.
-- `A2/report/` contains the A2 submitted PDF report.
-
 ## Update log
+
+### 2026-10-22: Update 
+- Uploaded the A1+B and A2+B
+
 
 ### 2026-10-08: Update 1
 
