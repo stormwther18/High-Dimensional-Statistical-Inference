@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-22T01:45:37.532773+00:00",
+  "execution_seconds": 1.0138577078469098,
+  "raw_rows": 186000,
+  "unique_seed_model_repetition_lambda_combinations": 186000,
+  "raw_groups": 6,
+  "repetitions_per_group": 500,
+  "lambdas_per_group": 62,
+  "independent_summary_rows_compared": 496,
+  "independent_optima_rows_compared": 8,
+  "max_summary_absolute_difference": 1.6431300764452317e-14,
+  "full_grid_first_repetition_replays": 6,
+  "direct_matrix_fits_compared": 372,
+  "max_fit_absolute_difference": 3.352873534367973e-14,
+  "max_conditional_risk_absolute_difference": 2.318145675417327e-13,
+  "max_raw_replay_absolute_difference": 2.318145675417327e-13,
+  "author_population_spectra": "passed",
+  "source_and_output_sha256": "passed",
+  "existing_covariance_checks": {
+    "general_to_identity_max_difference": 1.2434497875801753e-14,
+    "companion_equation_max_residual": 7.771561172376096e-16,
+    "author_population_spectra": "passed",
+    "weighted_spectral_trace_max_difference": 4.2588155224621005e-13,
+    "weighted_nullspace_and_optimal_lambda": "passed",
+    "general_fixed_X_Monte_Carlo": [
+      {
+        "lambda_": 0.1,
+        "exact_conditional_risk": 2.2147990654261007,
+        "population_mean": 2.212017331593283,
+        "se": 0.008345935078611625,
+        "z": -0.3333040344330738,
+        "draws": 4000
+      },
+      {
+        "lambda_": 1.0,
+        "exact_conditional_risk": 1.6198566910233199,
+        "population_mean": 1.6194291422228029,
+        "se": 0.0039228055860251465,
+        "z": -0.10899056584402578,
+        "draws": 4000
+      },
+      {
+        "lambda_": 4.0,
+        "exact_conditional_risk": 1.6494870200067926,
+        "population_mean": 1.6431119571768553,
+        "se": 0.004068169727681452,
+        "z": -1.5670592076232213,
+        "draws": 4000
+      }
+    ]
+  },
+  "interpretation": "Verification confirms arithmetic, data completeness and implementation agreement; it does not establish an inferential test for an argmin selected on the same scan."
+}

@@ -1,0 +1,193 @@
+{
+  "started_at_utc": "2026-10-22T01:32:42.897509+00:00",
+  "finished_at_utc": "2026-10-22T01:32:44.050381+00:00",
+  "execution_seconds": 1.1529041659086943,
+  "master_seeds": [
+    2026102201,
+    2026102202,
+    2026102203
+  ],
+  "repetitions_per_seed_model": 500,
+  "test_size": 100,
+  "alpha2": 1.0,
+  "noise_variance": 1.0,
+  "gamma": 1.0,
+  "models": [
+    {
+      "model_id": 1,
+      "model": "BinaryTree",
+      "n": 15,
+      "p": 15,
+      "depth": 4,
+      "exponential_rate": null,
+      "mean_eigenvalue": 1.0
+    },
+    {
+      "model_id": 2,
+      "model": "Exponential",
+      "n": 20,
+      "p": 20,
+      "depth": null,
+      "exponential_rate": 1.0,
+      "mean_eigenvalue": 0.9827754719736863
+    }
+  ],
+  "lambda_grid_expression": "np.unique(np.r_[np.linspace(.1,np.sqrt(10),61)**2,1.0])",
+  "lambda_count": 62,
+  "lambda_values": [
+    0.010000000000000002,
+    0.02281246566388525,
+    0.040834678254418444,
+    0.0640666377715996,
+    0.09250834421542872,
+    0.12615979758590581,
+    0.16502099788303085,
+    0.20909194510680384,
+    0.2583726392572248,
+    0.3128630803342937,
+    0.3725632683380105,
+    0.4374732032683753,
+    0.5075928851253881,
+    0.5829223139090488,
+    0.6634614896193576,
+    0.7492104122563142,
+    0.8401690818199189,
+    0.9363374983101714,
+    1.0,
+    1.037715661727072,
+    1.1443035720706207,
+    1.256101229340817,
+    1.3731086335376617,
+    1.4953257846611538,
+    1.6227526827112944,
+    1.7553893276880825,
+    1.893235719591519,
+    2.036291858421603,
+    2.1845577441783353,
+    2.3380333768617154,
+    2.496718756471744,
+    2.6606138830084194,
+    2.8297187564717436,
+    3.0040333768617153,
+    3.183557744178335,
+    3.3682918584216033,
+    3.5582357195915186,
+    3.7533893276880828,
+    3.9537526827112943,
+    4.159325784661155,
+    4.3701086335376615,
+    4.586101229340817,
+    4.807303572070622,
+    5.033715661727073,
+    5.265337498310172,
+    5.502169081819919,
+    5.744210412256316,
+    5.9914614896193585,
+    6.243922313909049,
+    6.501592885125389,
+    6.764473203268375,
+    7.032563268338012,
+    7.305863080334295,
+    7.584372639257225,
+    7.868091945106804,
+    8.157020997883032,
+    8.451159797585907,
+    8.75050834421543,
+    9.0550666377716,
+    9.364834678254422,
+    9.679812465663886,
+    10.000000000000002
+  ],
+  "expected_raw_rows": 186000,
+  "seed_sequence_expression": "np.random.SeedSequence([master_seed, model_id])",
+  "random_streams": [
+    {
+      "master_seed": 2026102201,
+      "model_id": 1,
+      "entropy": [
+        2026102201,
+        1
+      ],
+      "bit_generator": "PCG64",
+      "spawn_key": []
+    },
+    {
+      "master_seed": 2026102201,
+      "model_id": 2,
+      "entropy": [
+        2026102201,
+        2
+      ],
+      "bit_generator": "PCG64",
+      "spawn_key": []
+    },
+    {
+      "master_seed": 2026102202,
+      "model_id": 1,
+      "entropy": [
+        2026102202,
+        1
+      ],
+      "bit_generator": "PCG64",
+      "spawn_key": []
+    },
+    {
+      "master_seed": 2026102202,
+      "model_id": 2,
+      "entropy": [
+        2026102202,
+        2
+      ],
+      "bit_generator": "PCG64",
+      "spawn_key": []
+    },
+    {
+      "master_seed": 2026102203,
+      "model_id": 1,
+      "entropy": [
+        2026102203,
+        1
+      ],
+      "bit_generator": "PCG64",
+      "spawn_key": []
+    },
+    {
+      "master_seed": 2026102203,
+      "model_id": 2,
+      "entropy": [
+        2026102203,
+        2
+      ],
+      "bit_generator": "PCG64",
+      "spawn_key": []
+    }
+  ],
+  "common_random_numbers": "Within each repetition all lambdas share X, beta, training noise, test X, and test noise.",
+  "training_test_independence": "Training and testing rows and noises are independent; both use the same beta.",
+  "risk_definitions": {
+    "test_mse": "Mean squared error of the 100 independent test rows conditional on fitted beta.",
+    "population_risk": "1 + (fitted_beta-beta)^T Sigma (fitted_beta-beta)",
+    "conditional_risk": "Exact E[population_risk | X], integrating beta and training noise.",
+    "theory": "General covariance deterministic equivalent using empirical population spectrum H_p."
+  },
+  "interval_definition": "Pointwise normal approximation mean +/- 1.96 SE; SE=sample sd/sqrt(R).",
+  "relative_deviation_definition": "abs(observed_optimal_lambda-theory_optimal_lambda)/theory_optimal_lambda",
+  "theory_regret_definition": "Deterministic R(observed_optimal_lambda)-R(1); descriptive, not a significance test.",
+  "z_definition": "(test mean at lambda=1 - deterministic theory at lambda=1)/test SE; descriptive Monte Carlo scale, without model bias correction.",
+  "python_version": "3.12.14",
+  "numpy_version": "2.3.5",
+  "source_sha256": {
+    "run_experiment.py": "37f9815be4cf46e4454d02308a9f8030cdadf4786069c70bce0b613b0f3861ee",
+    "verify_results.py": "378f8862e5283b5f40d3c517b220731ae69611dc97b877dbdc825a0427d55a4e",
+    "A1_ridge_reproduction.py": "a44768c25ffe2aff22db3185190ce89fc4c9ab8950f0606dfc43e2ca64b9d0c1"
+  },
+  "output_sha256": {
+    "lambda_grid.csv": "23037fbc8cb441dc887313431a4f8f5a093e03be6565f8e7e363c63a252bba61",
+    "optima_summary.csv": "bb8cbce4e9497e6afdc42721a357dee3b776260644b0e49ec61bc58b59e3f461",
+    "pooled_optima_summary.csv": "b6122fc4df7c61ae65281c3ad80cb6514029baa89aebf00bba4ba93a2db5ef19",
+    "pooled_scan_summary.csv": "d2702b02687703340d5ada008f9afcf52408d4b1299ba99aee0e07ae72f5930f",
+    "population_spectra.csv": "fff8794117f66b196be11b4f94dd8932525ab11e77069fdc09ee0c2e27c7dea5",
+    "raw_repetitions.csv": "6a1444244ba09dd3850b63be8265910eba68f50b0805abd2f67181d03ae9654c",
+    "scan_summary.csv": "84cc69883c83d1694ada4faa95bfe6705d14cd9483bc2141c0042074e9ea7120"
+  }
+}

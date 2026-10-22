@@ -1,0 +1,4 @@
+# Experiment and numerical verification
+numpy==2.3.5
+# Document generation uses only Python standard library.
+# Compilation requires a XeLaTeX / TeX Live distribution.

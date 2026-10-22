@@ -1,0 +1,14 @@
+{
+  "seed": 20261022,
+  "reference_seed": 20261007,
+  "config_repetitions": 1500,
+  "independent_data_draws": 300,
+  "method_records": 18000,
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "pandas": "2.2.3",
+  "core_sha256": "1e1e38cee50ec45cdde874dfdc6340f8193799d28eb683d1a34f6c00fb38603c",
+  "elapsed_sec": 7.320085834013298
+}

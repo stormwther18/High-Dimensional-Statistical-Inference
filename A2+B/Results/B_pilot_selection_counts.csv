@@ -1,0 +1,17 @@
+gamma,chosen_log10_lower,count,rule
+1.0,-4.0,10,single-split
+1.0,-3.0,8,single-split
+1.0,-2.0,7,single-split
+1.0,-1.0,18,single-split
+1.0,0.0,57,single-split
+1.5,-4.0,13,single-split
+1.5,-3.0,12,single-split
+1.5,-2.0,7,single-split
+1.5,-1.0,21,single-split
+1.5,0.0,47,single-split
+1.0,-1.0,9,five-fold
+1.0,0.0,91,five-fold
+1.5,-3.0,1,five-fold
+1.5,-2.0,2,five-fold
+1.5,-1.0,6,five-fold
+1.5,0.0,91,five-fold

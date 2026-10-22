@@ -1,0 +1,8 @@
+{
+  "A2_replay_max_abs_excess_error": 0.0,
+  "A2_qp_success": true,
+  "A2_max_qp_gap": 7.429313555129546e-06,
+  "A2_rows": 18000,
+  "B_pilot_rows": 1400,
+  "B_pilot_selected": 200
+}

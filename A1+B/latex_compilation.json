@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-22",
+  "format": "XeLaTeX with ctexart, amsmath, newtxmath and native PGFPlots",
+  "pages": 7,
+  "standalone_source": true,
+  "external_images_or_data_needed_to_compile": false,
+  "desktop_compiler": "success",
+  "native_compiler": "XeLaTeX, two successful passes",
+  "unresolved_references": false,
+  "missing_glyphs": false,
+  "overfull_boxes": false,
+  "visual_review": "All seven final pages inspected using PDFium rendering",
+  "data_changed": false,
+  "pdf_sha256": "5ed9747583746c794929eadcac23b72c0a258868b622501663d594202c4d710f",
+  "tex_sha256": "51b9ea13eed3019cde9d28beb077100629c784c4133fe695232740441ccee66c"
+}

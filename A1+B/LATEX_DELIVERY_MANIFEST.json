@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-22",
+  "status": "ready_for_user_review",
+  "format": "LaTeX PDF",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 8185,
+      "sha256": "5a90e90cf731f1a3b9490c2ff4bd321fa27354fb4607c90a6dc3629867dd8311"
+    },
+    {
+      "path": "A1_ridge_reproduction.py",
+      "bytes": 54204,
+      "sha256": "a44768c25ffe2aff22db3185190ce89fc4c9ab8950f0606dfc43e2ca64b9d0c1"
+    },
+    {
+      "path": "run_experiment.py",
+      "bytes": 13107,
+      "sha256": "37f9815be4cf46e4454d02308a9f8030cdadf4786069c70bce0b613b0f3861ee"
+    },
+    {
+      "path": "verify_results.py",
+      "bytes": 12608,
+      "sha256": "378f8862e5283b5f40d3c517b220731ae69611dc97b877dbdc825a0427d55a4e"
+    },
+    {
+      "path": "config.json",
+      "bytes": 5701,
+      "sha256": "40fa2643318d90b9ff9fdec21f1acb73fdfb842628478cbd4b5f9d04593288b3"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 2051,
+      "sha256": "3b73d63ffb3658bbea87a240b243fb6db35bc10279635a9da3abe234c87027b2"
+    },
+    {
+      "path": "methods_review.md",
+      "bytes": 8474,
+      "sha256": "255028aa72b5d56e27e309cc01ff439c1c43a7b0787970ed4686fa93ea3fead3"
+    },
+    {
+      "path": "requirements-latex.txt",
+      "bytes": 168,
+      "sha256": "49a01e7cf02f44c7a66ff167f551358c428d93f098a286630c1a2d88ba4cdb8b"
+    },
+    {
+      "path": "make_latex_figures.py",
+      "bytes": 11854,
+      "sha256": "d31538ccd5f0a614bdfe8795a2a55dedc43c090bb129a1aa08ead9adfa884b26"
+    },
+    {
+      "path": "latex_figures.tex",
+      "bytes": 40005,
+      "sha256": "3a09a90d9732d2f6d9edeab2df47c4e266a23a992a359bc60ee5dd824eec381e"
+    },
+    {
+      "path": "build_latex_report.py",
+      "bytes": 19802,
+      "sha256": "5d5f8adf66570e27eec52a9c6fc216382bdfa7146a6cd261310536a6fd1e38d6"
+    },
+    {
+      "path": "latex_compilation.json",
+      "bytes": 645,
+      "sha256": "dfa7efdd4f4a415a2d8f14aa536de0fa842498ee7cefc7080948caab34b98223"
+    },
+    {
+      "path": "data/lambda_grid.csv",
+      "bytes": 2698,
+      "sha256": "23037fbc8cb441dc887313431a4f8f5a093e03be6565f8e7e363c63a252bba61"
+    },
+    {
+      "path": "data/optima_summary.csv",
+      "bytes": 3684,
+      "sha256": "bb8cbce4e9497e6afdc42721a357dee3b776260644b0e49ec61bc58b59e3f461"
+    },
+    {
+      "path": "data/pooled_optima_summary.csv",
+      "bytes": 1623,
+      "sha256": "b6122fc4df7c61ae65281c3ad80cb6514029baa89aebf00bba4ba93a2db5ef19"
+    },
+    {
+      "path": "data/pooled_scan_summary.csv",
+      "bytes": 55131,
+      "sha256": "d2702b02687703340d5ada008f9afcf52408d4b1299ba99aee0e07ae72f5930f"
+    },
+    {
+      "path": "data/population_spectra.csv",
+      "bytes": 1946,
+      "sha256": "fff8794117f66b196be11b4f94dd8932525ab11e77069fdc09ee0c2e27c7dea5"
+    },
+    {
+      "path": "data/raw_repetitions.csv",
+      "bytes": 30845600,
+      "sha256": "6a1444244ba09dd3850b63be8265910eba68f50b0805abd2f67181d03ae9654c"
+    },
+    {
+      "path": "data/scan_summary.csv",
+      "bytes": 165502,
+      "sha256": "84cc69883c83d1694ada4faa95bfe6705d14cd9483bc2141c0042074e9ea7120"
+    },
+    {
+      "path": "A1_第1项_多随机种子复验_规范LaTeX版.pdf",
+      "bytes": 265349,
+      "sha256": "5ed9747583746c794929eadcac23b72c0a258868b622501663d594202c4d710f"
+    },
+    {
+      "path": "A1_第1项_多随机种子复验_规范LaTeX版.tex",
+      "bytes": 58304,
+      "sha256": "51b9ea13eed3019cde9d28beb077100629c784c4133fe695232740441ccee66c"
+    }
+  ]
+}
