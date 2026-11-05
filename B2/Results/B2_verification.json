@@ -1,0 +1,13 @@
+{
+  "floor_rows": 32000,
+  "selected_rows": 6400,
+  "scenarios": 32,
+  "replications_per_scenario": 200,
+  "all_qp_success": true,
+  "max_gcv_qp_gap": 8.798581613289613e-06,
+  "max_oracle_qp_gap": 1.346745789199133e-05,
+  "max_loo_qp_gap": 1.1057824796711913e-05,
+  "selection_lookup_max_abs_error": 0.0,
+  "replay_floor_max_abs_error": 0.0,
+  "replay_selected_abs_error": 0.0
+}

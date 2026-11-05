@@ -1,0 +1,190 @@
+{
+  "root_seed": 202611041,
+  "repetitions": 100,
+  "configurations": [
+    {
+      "config_id": "a1.5_g0.8_d-0.3",
+      "n": 100,
+      "p": 80,
+      "gamma": 0.8,
+      "a": 1.5,
+      "b": 1.2,
+      "delta": -0.3
+    },
+    {
+      "config_id": "a1.5_g0.8_d+0.0",
+      "n": 100,
+      "p": 80,
+      "gamma": 0.8,
+      "a": 1.5,
+      "b": 1.5,
+      "delta": 0.0
+    },
+    {
+      "config_id": "a1.5_g0.8_d+0.3",
+      "n": 100,
+      "p": 80,
+      "gamma": 0.8,
+      "a": 1.5,
+      "b": 1.8,
+      "delta": 0.3
+    },
+    {
+      "config_id": "a1.5_g1.0_d-0.3",
+      "n": 100,
+      "p": 100,
+      "gamma": 1.0,
+      "a": 1.5,
+      "b": 1.2,
+      "delta": -0.3
+    },
+    {
+      "config_id": "a1.5_g1.0_d+0.0",
+      "n": 100,
+      "p": 100,
+      "gamma": 1.0,
+      "a": 1.5,
+      "b": 1.5,
+      "delta": 0.0
+    },
+    {
+      "config_id": "a1.5_g1.0_d+0.3",
+      "n": 100,
+      "p": 100,
+      "gamma": 1.0,
+      "a": 1.5,
+      "b": 1.8,
+      "delta": 0.3
+    },
+    {
+      "config_id": "a1.5_g1.5_d-0.3",
+      "n": 100,
+      "p": 150,
+      "gamma": 1.5,
+      "a": 1.5,
+      "b": 1.2,
+      "delta": -0.3
+    },
+    {
+      "config_id": "a1.5_g1.5_d+0.0",
+      "n": 100,
+      "p": 150,
+      "gamma": 1.5,
+      "a": 1.5,
+      "b": 1.5,
+      "delta": 0.0
+    },
+    {
+      "config_id": "a1.5_g1.5_d+0.3",
+      "n": 100,
+      "p": 150,
+      "gamma": 1.5,
+      "a": 1.5,
+      "b": 1.8,
+      "delta": 0.3
+    },
+    {
+      "config_id": "a2.0_g0.8_d-0.3",
+      "n": 100,
+      "p": 80,
+      "gamma": 0.8,
+      "a": 2.0,
+      "b": 1.7,
+      "delta": -0.3
+    },
+    {
+      "config_id": "a2.0_g0.8_d+0.0",
+      "n": 100,
+      "p": 80,
+      "gamma": 0.8,
+      "a": 2.0,
+      "b": 2.0,
+      "delta": 0.0
+    },
+    {
+      "config_id": "a2.0_g0.8_d+0.3",
+      "n": 100,
+      "p": 80,
+      "gamma": 0.8,
+      "a": 2.0,
+      "b": 2.3,
+      "delta": 0.3
+    },
+    {
+      "config_id": "a2.0_g1.0_d-0.3",
+      "n": 100,
+      "p": 100,
+      "gamma": 1.0,
+      "a": 2.0,
+      "b": 1.7,
+      "delta": -0.3
+    },
+    {
+      "config_id": "a2.0_g1.0_d+0.0",
+      "n": 100,
+      "p": 100,
+      "gamma": 1.0,
+      "a": 2.0,
+      "b": 2.0,
+      "delta": 0.0
+    },
+    {
+      "config_id": "a2.0_g1.0_d+0.3",
+      "n": 100,
+      "p": 100,
+      "gamma": 1.0,
+      "a": 2.0,
+      "b": 2.3,
+      "delta": 0.3
+    },
+    {
+      "config_id": "a2.0_g1.5_d-0.3",
+      "n": 100,
+      "p": 150,
+      "gamma": 1.5,
+      "a": 2.0,
+      "b": 1.7,
+      "delta": -0.3
+    },
+    {
+      "config_id": "a2.0_g1.5_d+0.0",
+      "n": 100,
+      "p": 150,
+      "gamma": 1.5,
+      "a": 2.0,
+      "b": 2.0,
+      "delta": 0.0
+    },
+    {
+      "config_id": "a2.0_g1.5_d+0.3",
+      "n": 100,
+      "p": 150,
+      "gamma": 1.5,
+      "a": 2.0,
+      "b": 2.3,
+      "delta": 0.3
+    }
+  ],
+  "training_datasets": 1800,
+  "noise_variance": 1.0,
+  "predictive_snr": 1.0,
+  "signed_l1_bound": 3.0,
+  "lambda_grid": "21 log-spaced points in [1e-4,100], plus gamma",
+  "continuous_oracle": "[1e-6,1e4], 101 log probes, refine all detected local minima; exact lambda=gamma if isotropic",
+  "risk_target": "1+(beta_hat-beta)^T Sigma (beta_hat-beta), analytic population evaluation",
+  "oracle_information": "X and known Sigma/Psi only, never realized beta or epsilon",
+  "prior_risk_matrix_excludes_noise": true,
+  "selected_conditional_risk": "NaN: fixed-weight formula is not substituted at y-selected weights",
+  "seconds": 101.60273816701374,
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "raw_sha256": "7073977709befa278c1e46123e6815e64872e2251d6cf96d144694876008f31c",
+  "solver_recovery": {
+    "config_id": "a1.5_g1.0_d-0.3",
+    "rep": 32,
+    "same_seed": 3459721514,
+    "reason": "initial global optimality gap exceeded tolerance; same data re-solved with fallback",
+    "replaced_records": 12
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "seed": 20261105,
+  "scenarios": 32,
+  "replications_per_scenario": 200,
+  "total_independent_datasets": 6400,
+  "log10_lower_candidates": [
+    -4.0,
+    -3.0,
+    -2.0,
+    -1.0,
+    0.0
+  ],
+  "lambda_upper": 100.0,
+  "lambda_count": 21,
+  "selection": "shared five-fold out-of-fold MSE; single 80/20 split control; selected grid refit on all training observations",
+  "evaluation": "analytical conditional excess risk using held-out true beta and Sigma",
+  "elapsed_sec": 104.14742704102537,
+  "python": "3.13.12 | packaged by conda-forge | (main, Feb  5 2026, 06:11:05) [Clang 19.1.7 ]",
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "numpy": "2.4.4",
+  "pandas": "3.0.2",
+  "script_sha256": "94438ee9476c00d586950f30c075464e76f4088ac9ad0ba2b1af14d034216476",
+  "core_sha256": "1e1e38cee50ec45cdde874dfdc6340f8193799d28eb683d1a34f6c00fb38603c",
+  "configurations": [
+    {
+      "config_id": 0,
+      "n": 100,
+      "p": 95,
+      "gamma": 0.95,
+      "cov": "iid",
+      "snr": 1.0
+    },
+    {
+      "config_id": 1,
+      "n": 100,
+      "p": 95,
+      "gamma": 0.95,
+      "cov": "iid",
+      "snr": 5.0
+    },
+    {
+      "config_id": 2,
+      "n": 100,
+      "p": 95,
+      "gamma": 0.95,
+      "cov": "toeplitz",
+      "snr": 1.0
+    },
+    {
+      "config_id": 3,
+      "n": 100,
+      "p": 95,
+      "gamma": 0.95,
+      "cov": "toeplitz",
+      "snr": 5.0
+    },
+    {
+      "config_id": 4,
+      "n": 100,
+      "p": 100,
+      "gamma": 1.0,
+      "cov": "iid",
+      "snr": 1.0
+    },
+    {
+      "config_id": 5,
+      "n": 100,
+      "p": 100,
+      "gamma": 1.0,
+      "cov": "iid",
+      "snr": 5.0
+    },
+    {
+      "config_id": 6,
+      "n": 100,
+      "p": 100,
+      "gamma": 1.0,
+      "cov": "toeplitz",
+      "snr": 1.0
+    },
+    {
+      "config_id": 7,
+      "n": 100,
+      "p": 100,
+      "gamma": 1.0,
+      "cov": "toeplitz",
+      "snr": 5.0
+    },
+    {
+      "config_id": 8,
+      "n": 100,
+      "p": 105,
+      "gamma": 1.05,
+      "cov": "iid",
+      "snr": 1.0
+    },
+    {
+      "config_id": 9,
+      "n": 100,
+      "p": 105,
+      "gamma": 1.05,
+      "cov": "iid",
+      "snr": 5.0
+    },
+    {
+      "config_id": 10,
+      "n": 100,
+      "p": 105,
+      "gamma": 1.05,
+      "cov": "toeplitz",
+      "snr": 1.0
+    },
+    {
+      "config_id": 11,
+      "n": 100,
+      "p": 105,
+      "gamma": 1.05,
+      "cov": "toeplitz",
+      "snr": 5.0
+    },
+    {
+      "config_id": 12,
+      "n": 100,
+      "p": 150,
+      "gamma": 1.5,
+      "cov": "iid",
+      "snr": 1.0
+    },
+    {
+      "config_id": 13,
+      "n": 100,
+      "p": 150,
+      "gamma": 1.5,
+      "cov": "iid",
+      "snr": 5.0
+    },
+    {
+      "config_id": 14,
+      "n": 100,
+      "p": 150,
+      "gamma": 1.5,
+      "cov": "toeplitz",
+      "snr": 1.0
+    },
+    {
+      "config_id": 15,
+      "n": 100,
+      "p": 150,
+      "gamma": 1.5,
+      "cov": "toeplitz",
+      "snr": 5.0
+    },
+    {
+      "config_id": 16,
+      "n": 200,
+      "p": 190,
+      "gamma": 0.95,
+      "cov": "iid",
+      "snr": 1.0
+    },
+    {
+      "config_id": 17,
+      "n": 200,
+      "p": 190,
+      "gamma": 0.95,
+      "cov": "iid",
+      "snr": 5.0
+    },
+    {
+      "config_id": 18,
+      "n": 200,
+      "p": 190,
+      "gamma": 0.95,
+      "cov": "toeplitz",
+      "snr": 1.0
+    },
+    {
+      "config_id": 19,
+      "n": 200,
+      "p": 190,
+      "gamma": 0.95,
+      "cov": "toeplitz",
+      "snr": 5.0
+    },
+    {
+      "config_id": 20,
+      "n": 200,
+      "p": 200,
+      "gamma": 1.0,
+      "cov": "iid",
+      "snr": 1.0
+    },
+    {
+      "config_id": 21,
+      "n": 200,
+      "p": 200,
+      "gamma": 1.0,
+      "cov": "iid",
+      "snr": 5.0
+    },
+    {
+      "config_id": 22,
+      "n": 200,
+      "p": 200,
+      "gamma": 1.0,
+      "cov": "toeplitz",
+      "snr": 1.0
+    },
+    {
+      "config_id": 23,
+      "n": 200,
+      "p": 200,
+      "gamma": 1.0,
+      "cov": "toeplitz",
+      "snr": 5.0
+    },
+    {
+      "config_id": 24,
+      "n": 200,
+      "p": 210,
+      "gamma": 1.05,
+      "cov": "iid",
+      "snr": 1.0
+    },
+    {
+      "config_id": 25,
+      "n": 200,
+      "p": 210,
+      "gamma": 1.05,
+      "cov": "iid",
+      "snr": 5.0
+    },
+    {
+      "config_id": 26,
+      "n": 200,
+      "p": 210,
+      "gamma": 1.05,
+      "cov": "toeplitz",
+      "snr": 1.0
+    },
+    {
+      "config_id": 27,
+      "n": 200,
+      "p": 210,
+      "gamma": 1.05,
+      "cov": "toeplitz",
+      "snr": 5.0
+    },
+    {
+      "config_id": 28,
+      "n": 200,
+      "p": 300,
+      "gamma": 1.5,
+      "cov": "iid",
+      "snr": 1.0
+    },
+    {
+      "config_id": 29,
+      "n": 200,
+      "p": 300,
+      "gamma": 1.5,
+      "cov": "iid",
+      "snr": 5.0
+    },
+    {
+      "config_id": 30,
+      "n": 200,
+      "p": 300,
+      "gamma": 1.5,
+      "cov": "toeplitz",
+      "snr": 1.0
+    },
+    {
+      "config_id": 31,
+      "n": 200,
+      "p": 300,
+      "gamma": 1.5,
+      "cov": "toeplitz",
+      "snr": 5.0
+    }
+  ]
+}

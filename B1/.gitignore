@@ -1,0 +1,10 @@
+.venv/
+.cache/
+__pycache__/
+*.pyc
+Report/*.aux
+Report/*.out
+Report/*.log
+Report/compile_pass*.txt
+Results/weights.csv
+Results/.weights-restore-*.tmp

@@ -1,0 +1,81 @@
+{
+  "raw_rows": 21600,
+  "configurations": 18,
+  "methods": [
+    "bayes_oracle",
+    "cross_gcv_ma",
+    "cross_gcv_signed_L3",
+    "equal_ma",
+    "gcv_ma",
+    "loo_ma",
+    "minnorm",
+    "oracle_convex",
+    "oracle_signed_L3",
+    "ridge_cont_oracle",
+    "ridge_gcv",
+    "ridge_grid_oracle"
+  ],
+  "independent_training_repetitions": 1800,
+  "duplicate_method_rep_keys": 0,
+  "balanced_method_repetitions": true,
+  "repetitions_per_config_method": [
+    100
+  ],
+  "risk_is_finite": true,
+  "risk_at_least_noise_variance_one": true,
+  "solver_failures": 0,
+  "finite_conditional_risk_for_nonoracle_methods": 0,
+  "uncertainty": "SE across independent training repetitions; paired differences use shared repetitions. MC 95% intervals are normal approximations, with no multiplicity correction.",
+  "calibration": "Ratio of mean in-training risk estimate to mean independently evaluated total population risk. Ratio SE uses paired delta method.",
+  "gain_sign": "Positive conditional oracle gain favors averaging over the continuous nonnegative-ridge oracle.",
+  "plots": "All error bars are +/- one Monte Carlo SE. Main empirical-risk figure uses log excess risk; minimum-norm and equal-weight comparators are retained in CSV tables.",
+  "minimum_norm_interpolation": "For p=n the Gaussian minimum-norm population risk has an infinite expectation. Its sample mean is descriptive only; ordinary mean SEs and normal intervals are deliberately omitted. tail_summary.csv contains descriptive quantiles and maxima.",
+  "oracle_convex": {
+    "largest_conditional_gain": {
+      "config_id": "a1.5_g1.5_d-0.3",
+      "n": 100,
+      "p": 150,
+      "gamma": 1.5,
+      "a": 1.5,
+      "b": 1.2,
+      "delta": -0.3,
+      "method": "oracle_convex",
+      "reference": "ridge_cont_oracle",
+      "repetitions": 100,
+      "mean_conditional_gain": 0.0028743564237303752,
+      "mc_se": 1.4459972707018832e-05,
+      "mc_lower_95": 0.0028460148772246185,
+      "mc_upper_95": 0.002902697970236132,
+      "mean_per_rep_relative_gain_pct": 0.21101806768801715,
+      "relative_gain_mc_se": 0.0010092328400207254,
+      "min_per_rep_gain": 0.0024201515061688106,
+      "max_per_rep_gain": 0.0032593642974974024,
+      "positive_favors_method": true
+    },
+    "isotropic_control_max_abs_mean_gain": 8.881784197001253e-18
+  },
+  "oracle_signed_L3": {
+    "largest_conditional_gain": {
+      "config_id": "a1.5_g1.5_d-0.3",
+      "n": 100,
+      "p": 150,
+      "gamma": 1.5,
+      "a": 1.5,
+      "b": 1.2,
+      "delta": -0.3,
+      "method": "oracle_signed_L3",
+      "reference": "ridge_cont_oracle",
+      "repetitions": 100,
+      "mean_conditional_gain": 0.0028757181166178714,
+      "mc_se": 1.4452631118840758e-05,
+      "mc_lower_95": 0.0028473909596249433,
+      "mc_upper_95": 0.0029040452736107994,
+      "mean_per_rep_relative_gain_pct": 0.21111808524393186,
+      "relative_gain_mc_se": 0.0010087333645905797,
+      "min_per_rep_gain": 0.002420319422800965,
+      "max_per_rep_gain": 0.0032609510857382062,
+      "positive_favors_method": true
+    },
+    "isotropic_control_max_abs_mean_gain": 8.881784197001253e-18
+  }
+}

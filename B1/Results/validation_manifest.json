@@ -1,0 +1,8 @@
+{
+  "mp_training_datasets": 300,
+  "de_training_datasets": 720,
+  "root_seed": 202611041,
+  "mp_repetitions": 100,
+  "de_repetitions": 40,
+  "seconds": 5.5609741670195945
+}

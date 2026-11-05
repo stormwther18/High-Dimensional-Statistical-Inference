@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "report_pages": 14,
+  "pdf_actual_compiler": "XeLaTeX; two final passes",
+  "visual_review": "all 14 pages rendered and reviewed; no clipping, overlaps or missing glyphs",
+  "unit_test_groups_passed": 6,
+  "main_training_datasets": 1800,
+  "additional_validation_datasets": 1020,
+  "main_method_records": 21600,
+  "oracle_anchor_reuses_main_designs": 1800,
+  "solver_failures": 0,
+  "mean_risk_improvement_over_ridge_gcv_demonstrated": false,
+  "original_A1_A2_and_weekly_reports_modified": false
+}

@@ -6,6 +6,10 @@ Authors: Xinyi Hong, Ruiyu Li.
 
 ## Update log
 
+### 2026-11-05: Third weekly report
+
+- Added the B1 and B2 folders with reports, code, results, and figures.
+
 ### 2026-10-22: Update 
 - Uploaded the A1+B and A2+B
 

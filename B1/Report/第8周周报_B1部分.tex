@@ -1,0 +1,120 @@
+\documentclass[UTF8,fontset=fandol,11pt,a4paper]{ctexart}
+
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{array,booktabs,tabularx,amssymb,amsmath,bm,graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage{caption,float,placeins}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=MidnightBlue,urlcolor=MidnightBlue]{hyperref}
+\usepackage{microtype}
+\usepackage{xurl}
+\setlength{\emergencystretch}{2em}
+\pagestyle{plain}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35em}
+\setlist[itemize]{leftmargin=1.5em,itemsep=0.15em,topsep=0.2em}
+\renewcommand{\arraystretch}{1.32}
+\newcommand{\cbox}{\(\square\)\,}
+\newcommand{\bbox}{\(\blacksquare\)\,}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\captionsetup{font=small,labelfont=bf}
+
+\title{\textbf{高维统计课程项目周报（B1部分）}}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+\vspace{-2.5em}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}lX>{\bfseries}lX@{}}
+组号 & 第3组 & 周次 & 第8周 \\
+研究方向 & \multicolumn{3}{l}{Scaling Law与高维岭回归（方向1）} \\
+本份负责人 & 李睿宇 & 本份范围 & B1 \\
+报告周期 & \multicolumn{3}{l}{2026-10-22 至 2026-11-05} \\
+本部分阶段 & \multicolumn{3}{l}{\bbox\ B计划 \quad \bbox\ B执行 \quad \cbox\ 论文写作} \\
+\end{tabularx}
+
+\section*{一、周期目标与完成情况}
+\textbf{预定目标：}完成B1一般先验下的多岭参数平均风险推导、信号谱对齐实验与GCV校准核查，
+区分连续单岭基准、平均家族收益和实际选权代价。\par
+\textbf{状态：}\bbox\ 完成。\par
+\textbf{证据位置：}\nolinkurl{B1/Code/}、\nolinkurl{B1/Results/}、\nolinkurl{B1/Report/}。
+
+\section*{二、周期核心结果}
+\textbf{B1：多岭参数平均的可达收益、信号谱对齐与选权代价}
+
+\textbf{理论结果。}设$y=X\bm\beta+\bm\varepsilon$，$X\in\mathbb R^{n\times p}$，
+系数均值为零、协方差为$\Psi$，且与设计独立；训练噪声与二者独立，均值为零、协方差为$\sigma^2I_n$。
+独立测试特征均值为零、协方差为$\Sigma$，测试噪声方差同为$\sigma^2$。
+记$S=X^\top X/n$、$Q_j=(S+\lambda_jI_p)^{-1}$，$\lambda_j>0$。
+对给定$X$后固定且和为1的权重$\pi$，先验平均\emph{总}预测风险为
+\begin{equation*}
+\begin{aligned}
+\overline R_X(\pi)&=\sigma^2+\pi^\top C_X\pi,\\
+(C_X)_{jk}
+&=\lambda_j\lambda_k\operatorname{tr}(\Sigma Q_j\Psi Q_k)
++\frac{\sigma^2}{n}\operatorname{tr}(\Sigma SQ_jQ_k).
+\end{aligned}
+\tag{B1-1}\label{eq:w8-b1-risk}
+\end{equation*}
+各向同性时交叉项可由单参数谱函数的差商计算；一般$\Psi$须保留非交换结构。
+另给出普通聚合GCV与交叉残差准则的权重换元、固定权重下GCV失准的显式反例，
+并由风险矩阵误差与$\ell_1$权重约束推导固定候选集的选权稳定性界。
+这些结果区分精确恒等式、已有文献的受限推论与本次模拟证据，不宣称普遍最优性或已确认首创。
+
+\textbf{实验设计。}固定$n=100$、$p/n\in\{0.8,1,1.5\}$，
+总体谱按$\mu_i\propto i^{-a}$排列并规范到$\operatorname{tr}\Sigma=p$，$a\in\{1.5,2\}$。
+高斯系数沿总体谱方向的方差按$i^{a-b}$分配，
+取$b-a\in\{-0.3,0,0.3\}$，规范到$\mathbb E(\bm\beta^\top\Sigma\bm\beta)=\sigma^2=1$。
+18配置各100次，共1,800份独立训练数据、21,600条方法记录；
+另用300份数据验证GCV极限反例，720份数据验证有界谱风险公式。
+候选参数为$[10^{-4},100]$上的21个对数点，再加入$p/n$；连续单岭oracle在宽区间内数值搜索，
+各向同性时使用精确参数$p/n$。oracle只使用设计与已知生成参数，不用本次真实系数选权。
+
+\textbf{核心发现。}各向同性控制恢复连续最优单岭；弱谱方向信号方差提高时，
+凸平均oracle相对连续单岭的条件总风险收益为$0.000904$--$0.002874$；
+强谱方向更突出时，$\norm{\pi}_1\le3$的负权重oracle收益为$0.000457$--$0.001372$。
+收益存在但幅度小。实际选权中，交叉残差与LOO平均在全部18配置中改善普通GCV平均，
+本轮尚未显示优于Ridge-GCV。
+例如$a=1.5,p/n=1,b-a=-0.3$时，普通GCV平均、交叉残差平均、LOO平均的总风险分别为
+$4.1384\pm0.3845$、$1.4763\pm0.0290$、$1.4179\pm0.0150$，
+Ridge-GCV为$1.3571\pm0.0075$。误差为100次独立重复均值的标准误。
+方法共享训练数据，真实参数只用于拟合后的解析风险评估。
+因此本阶段发现的是有限的可达收益与较大的选权代价，尚未取得稳定优于单岭的可实施方法。
+
+\medskip
+
+\section*{三、偏差、问题与处理}
+\textbf{B1部分}
+\begin{itemize}
+  \item \textbf{风险目标与基准：}给定设计的先验平均风险不能直接套用于依赖响应的选权。
+  各向同性下须比较连续最优单岭；离散网格收益或使用真实系数的事后oracle收益，不等同于可实施改进。
+  \item \textbf{收益幅度与网格诊断：}本轮负权重实际选权更不稳定。
+  对相同设计补入连续最优参数后，强谱信号的600次增广凸平均均回到单岭顶点；
+  原有限网格的轻微负收益不能解释为所有凸平均均劣于单岭。
+  重标幂律谱仅作有限维机制证据，不无条件套用有界谱渐近保证。
+  \item \textbf{核验与处理：}6组数值测试通过；每配置首个重复重放风险误差为0。
+  全部求解检查通过，最大归一化一阶间隙为$1.91\times10^{-5}$。
+  一次未达阈值的求解用同一数据种子进一步求解，未替换数据。
+  保存逐次风险、权重、配对统计、校准及种子与求解审计。
+\end{itemize}
+
+
+\section*{四、下周期可验收目标}
+\textbf{目标：}稳定B1训练内选权，检验向单岭收缩能否降低权重估计代价。\par
+\textbf{验收标准：}固定$n=100,a=1.5$，取$p/n\in\{1,1.5\}$、$b-a\in\{-0.3,0.3\}$，
+四配置各200次。比较Ridge-GCV、交叉残差、LOO及训练内选择的收缩规则；
+提交配对风险差、95\% Monte Carlo区间、校准、权重稳定性与选权成本。
+真实参数仅用于评价，不预设必然改进。\par
+\textbf{负责人：}李睿宇。
+
+\section*{五、个人贡献说明}
+李睿宇完成B1一般先验风险推导、GCV权重换元与稳定性分析；
+18配置配对实验、独立谱公式验证、连续参数增广诊断与代码核验。
+可核验产物为\nolinkurl{B1/Code/}、\nolinkurl{B1/Results/}、
+\nolinkurl{B1/Figures/}、\nolinkurl{B1/Report/}。本份沿用原周报所列个人贡献比例50\%。
+
+\section*{六、提交清单}
+\bbox\ B1周报PDF与\LaTeX{}源文件\quad \bbox\ B1研究报告\quad \bbox\ 代码、原始结果与矢量图\par
+\end{document}
